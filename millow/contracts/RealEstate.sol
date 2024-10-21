@@ -15,7 +15,7 @@ contract RealEstate is ERC721URIStorage {
 
     // Function to mint a new NFT
     // It increments the token ID counter, creates a new token ID, mints the NFT to the recipient, sets the token URI, and returns the token ID
-    function mintNFT(string memory tokenURI) public returns (uint256) {
+    function mint(string memory tokenURI) public returns (uint256) {
         _tokenIds.increment();
 
         uint256 newItemId = _tokenIds.current();
